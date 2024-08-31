@@ -1,7 +1,8 @@
 ﻿Module Program
 
     Sub Main()
-
+        Banner()
+        Console.ReadKey()
     End Sub
 
     Sub Banner()
@@ -12,6 +13,7 @@
         Console.WriteLine(" / ____/ / / / / /_/ /    / / /  __(__  ) /_/  __/  /    ___/ / __/ ")
         Console.WriteLine("/_/   /_/_/ /_/\__, /    /_/  \___/____/\__/\___/\_/    /____/____/ ")
         Console.WriteLine("              /____/                                                 ")
+
     End Sub
 
 End Module
