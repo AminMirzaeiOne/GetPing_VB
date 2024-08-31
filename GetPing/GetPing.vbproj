@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7DB86380-B48B-47CB-8B6B-30EC7535A961}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>GetPing.Module1</StartupObject>
+    <StartupObject>GetPing.Program</StartupObject>
     <RootNamespace>GetPing</RootNamespace>
     <AssemblyName>GetPing</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,7 +69,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
