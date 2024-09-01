@@ -14,7 +14,7 @@ Module Program
             hostName = System.Console.ReadLine().ToLower().Trim()
             CheckPing(hostName)
         ElseIf menu = "themes" Then
-
+            Themes.QuestionTheme()
 
         End If
 
