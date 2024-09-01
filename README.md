@@ -27,8 +27,8 @@ Receive ping and user information of a host or domain and display the connection
 6 - View the result
 
 <h2>📷 Screenshots</h2>
-![Screenshot 2024-09-01 064939](https://github.com/user-attachments/assets/e237fbda-961b-40a9-b868-6fb853c2f1c4)
-![Screenshot 2024-09-01 064951](https://github.com/user-attachments/assets/406d65bc-da6a-46a4-8f83-133f59acd1c2)
-![Screenshot 2024-09-01 065140](https://github.com/user-attachments/assets/878f6fd8-f3f6-4a72-a2ea-35b1cb7a5f42)
-![Screenshot 2024-09-01 065235](https://github.com/user-attachments/assets/95d53605-5fb8-4256-9590-de383ca64259)
+![Screenshot 2024-09-01 064939](https://github.com/user-attachments/assets/e237fbda-961b-40a9-b868-6fb853c2f1c4)<br />
+![Screenshot 2024-09-01 064951](https://github.com/user-attachments/assets/406d65bc-da6a-46a4-8f83-133f59acd1c2)<br />
+![Screenshot 2024-09-01 065140](https://github.com/user-attachments/assets/878f6fd8-f3f6-4a72-a2ea-35b1cb7a5f42)<br />
+![Screenshot 2024-09-01 065235](https://github.com/user-attachments/assets/95d53605-5fb8-4256-9590-de383ca64259)<br />
 ![Screenshot 2024-09-01 065253](https://github.com/user-attachments/assets/d6444abb-5663-4f2c-bd18-e771e2a9b0af)
