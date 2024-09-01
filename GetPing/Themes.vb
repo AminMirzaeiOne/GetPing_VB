@@ -1,5 +1,5 @@
 ﻿Module Themes
-    Public Sub QestionTheme()
+    Public Sub QuestionTheme()
 
     End Sub
 End Module
