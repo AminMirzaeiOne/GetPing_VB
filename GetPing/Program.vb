@@ -19,8 +19,7 @@ pingstart:
                 GoTo pingstart
             End If
         ElseIf menu = "info" Then
-
-
+            Information.DrawInfo()
         End If
 
         Console.ReadKey()
