@@ -5,7 +5,7 @@ Imports Microsoft
 Module Program
 
     Sub Main()
-        System.Console.Write("Ping Or Themes : ")
+        System.Console.Write("Ping Or Themes Or Info : ")
         Dim menu As String = System.Console.ReadLine().ToLower()
         Dim hostName As String = ""
         If menu = "ping" Then
@@ -18,6 +18,8 @@ pingstart:
             If Themes.QuestionTheme().Equals(True) Then
                 GoTo pingstart
             End If
+        ElseIf menu = "info" Then
+
 
         End If
 
