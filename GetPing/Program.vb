@@ -5,7 +5,19 @@ Imports Microsoft
 Module Program
 
     Sub Main()
-        Banner()
+        System.Console.Write("Ping Or Themes : ")
+        Dim menu As String = System.Console.ReadLine().ToLower()
+        Dim hostName As String = ""
+        If menu = "ping" Then
+            Banner()
+            System.Console.Write("Enter Your Host example(www.google.com) : ")
+            hostName = System.Console.ReadLine().ToLower().Trim()
+            CheckPing(hostName)
+        ElseIf menu = "themes" Then
+
+
+        End If
+
         Console.ReadKey()
     End Sub
 
@@ -22,7 +34,7 @@ Module Program
     Sub CheckPing(url As String)
         Dim hostname_or_ip As String = url
         Dim data As String = ""
-        Dim timeout As Integer = ""
+        Dim timeout As Integer = 0
         Dim ping As Ping = New Ping()
         Dim pingOptions As PingOptions = New PingOptions(64, True)
         timeout = 120
