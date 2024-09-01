@@ -1,5 +1,6 @@
 ﻿Imports System.Net.NetworkInformation
 Imports System.Text
+Imports Microsoft
 
 Module Program
 
@@ -23,10 +24,34 @@ Module Program
         Dim data As String = ""
         Dim timeout As Integer = ""
         Dim ping As Ping = New Ping()
-        Dim pingOption As PingOptions = New PingOptions(64, True)
+        Dim pingOptions As PingOptions = New PingOptions(64, True)
         timeout = 120
         data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         Dim buffer As Byte() = Encoding.ASCII.GetBytes(data)
+        Dim reply As PingReply = ping.Send(hostname_or_ip, timeout, buffer, pingOptions)
+        Console.WriteLine("-------------------------------------------------")
+        ' Check if the connection was successful
+        If reply.Status = IPStatus.Success Then
+            ' Connection status
+            Console.WriteLine("Connection: {0}", reply.Status.ToString())
+
+            ' Destination IP address
+            Console.WriteLine("Address: {0}", reply.Address.ToString())
+
+            ' RoundTrip time
+            Console.WriteLine("RoundTrip time: {0}", reply.RoundtripTime)
+
+            ' TTL
+            Console.WriteLine("Time to live (TTL): {0}", reply.Options.Ttl)
+
+            ' Packet size
+            Console.WriteLine("Buffer size: {0}", reply.Buffer.Length)
+
+            ' Fragment
+            Console.WriteLine("Don't fragment: {0}", reply.Options.DontFragment)
+        Else
+            Console.WriteLine("Ping failed!")
+        End If
     End Sub
 
 End Module
