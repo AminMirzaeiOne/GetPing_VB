@@ -1,4 +1,5 @@
 ﻿Imports System.Net.NetworkInformation
+Imports System.Text
 
 Module Program
 
@@ -18,10 +19,14 @@ Module Program
     End Sub
 
     Sub CheckPing(url As String)
-        Dim hostname_or_ip As String = ""
+        Dim hostname_or_ip As String = url
         Dim data As String = ""
         Dim timeout As Integer = ""
-
+        Dim ping As Ping = New Ping()
+        Dim pingOption As PingOptions = New PingOptions(64, True)
+        timeout = 120
+        data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        Dim buffer As Byte() = Encoding.ASCII.GetBytes(data)
     End Sub
 
 End Module
