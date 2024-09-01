@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("GetPing")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("Get connection status and ip and ping of a domain and host")>
+<Assembly: AssemblyCompany("AminMirzaeiOne")>
 <Assembly: AssemblyProduct("GetPing")>
-<Assembly: AssemblyCopyright("Copyright ©  2024")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyCopyright("Copyright ©  2016")>
+<Assembly: AssemblyTrademark("AminMirzaeiOne")>
 
 <Assembly: ComVisible(False)>
 
