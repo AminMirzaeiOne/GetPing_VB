@@ -15,6 +15,12 @@ Module Program
         Console.WriteLine(" / ____/ / / / / /_/ /    / / /  __(__  ) /_/  __/  /   ")
         Console.WriteLine("/_/   /_/_/ /_/\__, /    /_/  \___/____/\__/\___/\_/    ")
         Console.WriteLine("              /____/                                    ")
+    End Sub
+
+    Sub CheckPing(url As String)
+        Dim hostname_or_ip As String = ""
+        Dim data As String = ""
+        Dim timeout As Integer = ""
 
     End Sub
 
