@@ -16,7 +16,9 @@ pingstart:
             CheckPing(hostName)
         ElseIf menu = "themes" Then
             If Themes.QuestionTheme().Equals(True) Then
-                GoTo pingstart
+                If Themes.QuestionColor().Equals(True) Then
+                    GoTo pingstart
+                End If
             End If
         ElseIf menu = "info" Then
             Information.DrawInfo()
@@ -26,7 +28,6 @@ pingstart:
     End Sub
 
     Sub Banner()
-        Console.ForegroundColor = ConsoleColor.Green
         Console.WriteLine("    ____  _                ______          __           ")
         Console.WriteLine("   / __ \(_)___  ____ _   /_  __/__  _____/ /____  __  _")
         Console.WriteLine("  / /_/ / / __ \/ __ `/    / / / _ \/ ___/ __/ _ \/  /_/")

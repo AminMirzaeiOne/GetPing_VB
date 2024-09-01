@@ -6,10 +6,12 @@ question:
         If theme = "light" Then
             System.Console.BackgroundColor = ConsoleColor.White
             System.Console.Clear()
+            System.Console.ForegroundColor = ConsoleColor.Black
             Return True
         ElseIf theme = "dark" Then
             System.Console.BackgroundColor = ConsoleColor.Black
             System.Console.Clear()
+            System.Console.ForegroundColor = ConsoleColor.White
             Return True
         Else
             System.Console.BackgroundColor = ConsoleColor.Red
@@ -23,9 +25,11 @@ question:
     End Function
 
     Public Function QuestionColor() As Boolean
+
 questioncolor:
         System.Console.Write("Enter Your Theme Color (Black - White - Red - Blue - Green - Magenta - Yellow) : ")
         Dim color As String = System.Console.ReadLine().ToLower()
+        System.Console.Clear()
         Dim successful As Boolean = True
         Select Case color
             Case "black"
