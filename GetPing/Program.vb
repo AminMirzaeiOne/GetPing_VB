@@ -1,4 +1,6 @@
-﻿Module Program
+﻿Imports System.Net.NetworkInformation
+
+Module Program
 
     Sub Main()
         Banner()
