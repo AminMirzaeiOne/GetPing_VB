@@ -16,6 +16,7 @@ question:
             System.Console.ForegroundColor = ConsoleColor.White
             System.Console.WriteLine("Theme It is invalid")
             System.Console.ResetColor()
+            Console.ReadKey()
             GoTo question
             Return False
         End If

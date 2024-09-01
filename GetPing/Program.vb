@@ -9,12 +9,15 @@ Module Program
         Dim menu As String = System.Console.ReadLine().ToLower()
         Dim hostName As String = ""
         If menu = "ping" Then
+pingstart:
             Banner()
             System.Console.Write("Enter Your Host example(www.google.com) : ")
             hostName = System.Console.ReadLine().ToLower().Trim()
             CheckPing(hostName)
         ElseIf menu = "themes" Then
-            Themes.QuestionTheme()
+            If Themes.QuestionTheme().Equals(True) Then
+                GoTo pingstart
+            End If
 
         End If
 
