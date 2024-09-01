@@ -22,25 +22,26 @@ question:
         End If
     End Function
 
-    Public Sub QuestionColor()
+    Public Function QuestionColor() As Boolean
 questioncolor:
         System.Console.Write("Enter Your Theme Color (Black - White - Red - Blue - Green - Magenta - Yellow) : ")
         Dim color As String = System.Console.ReadLine().ToLower()
+        Dim successful As Boolean = True
         Select Case color
             Case "black"
                 System.Console.ForegroundColor = ConsoleColor.Black
-            Case "black"
-                System.Console.ForegroundColor = ConsoleColor.Black
+            Case "white"
+                System.Console.ForegroundColor = ConsoleColor.White
             Case "red"
-                System.Console.ForegroundColor = ConsoleColor.Black
+                System.Console.ForegroundColor = ConsoleColor.Red
             Case "blue"
-                System.Console.ForegroundColor = ConsoleColor.Black
+                System.Console.ForegroundColor = ConsoleColor.Blue
             Case "green"
-                System.Console.ForegroundColor = ConsoleColor.Black
+                System.Console.ForegroundColor = ConsoleColor.Green
             Case "magenta"
-                System.Console.ForegroundColor = ConsoleColor.Black
+                System.Console.ForegroundColor = ConsoleColor.Magenta
             Case "yellow"
-                System.Console.ForegroundColor = ConsoleColor.Black
+                System.Console.ForegroundColor = ConsoleColor.Yellow
             Case Else
                 System.Console.BackgroundColor = ConsoleColor.Red
                 System.Console.ForegroundColor = ConsoleColor.White
@@ -48,7 +49,9 @@ questioncolor:
                 System.Console.ResetColor()
                 Console.ReadKey()
                 GoTo questioncolor
+                successful = False
 
         End Select
-    End Sub
+        Return successful
+    End Function
 End Module
